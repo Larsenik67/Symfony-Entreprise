@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SalarieController!{% endblock %}
+
+{% block body %}
+
+<h1>Liste des salariés</h1>
+
+{% for salarie in salaries %}
+    {{salarie.nom}} <br>
+{% endfor %}
+
+
+{% endblock %}
