@@ -49,6 +49,11 @@ class Entreprise
      */
     private $salaries;
 
+    public function __toString()
+    {
+        return $this->raisonSociale." - ".$this->ville;
+    }
+
     public function __construct()
     {
         $this->salaries = new ArrayCollection();

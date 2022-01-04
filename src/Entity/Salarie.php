@@ -58,6 +58,11 @@ class Salarie
      */
     private $entreprise;
 
+    public function __toString()
+    {
+        return $this->nom." ".$this->prenom;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -159,3 +164,5 @@ class Salarie
         return $this;
     }
 }
+
+
